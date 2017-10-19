@@ -4,22 +4,22 @@ const async = require('async');
 const Mqtt = require('mqtt');
 const Confirm = require('prompt-confirm');
 const yargs = require('yargs')
-    .option('debug', {
-        alias: 'd',
+    .option('d', {
+        alias: 'debug',
         describe: 'Enable debug messages'
     })
-    .option('topic', {
-        alias: 't',
+    .option('t', {
+        alias: 'topic',
         demandOption: true,
         describe: 'MQTT topic, wildcards + and # allowed, may be repeated'
     })
-    .option('url', {
-        alias: 'u',
+    .option('u', {
+        alias: 'url',
         default: 'mqtt://127.0.0.1',
         describe: 'MQTT broker url'
     })
-    .option('force', {
-        alias: 'f',
+    .option('f', {
+        alias: 'force',
         describe: 'Remove topics without confirmation'
     })
     .usage('Usage: $0 <options>')
