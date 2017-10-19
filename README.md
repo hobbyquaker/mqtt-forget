@@ -20,13 +20,25 @@
 Usage: mqtt-forget <Options>
 
 Options:
-  --debug, -d  Enable debug messages
-  --topic, -t  MQTT topic, wildcards + and # allowed, may be repeated [required]
-  --url, -u    MQTT broker url                     [default: "mqtt://127.0.0.1"]
-  --force, -f  Remove topics without confirmation
+  -d, --debug  Enable debug messages
+  -t, --topic  MQTT topic, wildcards + and # allowed, may be repeated [required]
+  -u, --url    MQTT broker url                     [default: "mqtt://127.0.0.1"]
+  -f, --force  Remove topics without confirmation
   --help       Show help                                            
   --version    Show version number                                 
 ```
+
+
+## Examples
+
+#### Remove all topics matching test/# via websocket connection
+
+`$ mqtt-forget -u ws://websocketbroker -t 'test/#'`
+
+
+#### Remove all retained topics without confirmation, broker with authentication
+
+`$ mqtt-forget -u mqtt://user:password@broker -t '#' -f`
 
 
 ## Contributing
