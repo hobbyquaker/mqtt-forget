@@ -1,0 +1,48 @@
+{
+  "name": "mqtt-forget",
+  "version": "1.0.0",
+  "description": "Command line tool to remove retained MQTT topics by wildcard",
+  "main": "index.js",
+  "bin": {
+    "mqtt-forget": "./index.js"
+  },
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "camo-purge ; xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hobbyquaker/mqtt-forget.git"
+  },
+  "keywords": [
+    "MQTT",
+    "retain",
+    "message",
+    "delete",
+    "forget",
+    "remove",
+    "wildcard"
+  ],
+  "author": "Sebastian Raff <hq@ccu.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hobbyquaker/mqtt-forget/issues"
+  },
+  "homepage": "https://github.com/hobbyquaker/mqtt-forget#readme",
+  "xo": {
+    "space": 4
+  },
+  "devDependencies": {
+    "camo-purge": "latest",
+    "xo": "latest"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "mqtt": "^2.13.1",
+    "prompt-confirm": "^1.2.0",
+    "yargs": "^9.0.1"
+  }
+}
