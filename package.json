@@ -1,6 +1,6 @@
 {
   "name": "mqtt-forget",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command line tool to remove retained MQTT topics by wildcard",
   "main": "index.js",
   "bin": {
