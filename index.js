@@ -32,10 +32,10 @@ if (typeof yargs.topic === 'string') {
 }
 
 let debug;
-const log = console.log;
+const {log} = console;
 
 if (yargs.debug) {
-    debug = console.log;
+    debug = log;
 } else {
     debug = () => {};
 }
