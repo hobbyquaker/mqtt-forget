@@ -1,6 +1,6 @@
 {
   "name": "mqtt-forget",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Command line tool to remove retained MQTT topics by wildcard",
   "main": "index.js",
   "bin": {
@@ -26,7 +26,7 @@
     "remove",
     "wildcard"
   ],
-  "author": "Sebastian Raff <hq@ccu.io>",
+  "author": "Sebastian Raff <hobbyquaker@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hobbyquaker/mqtt-forget/issues"
@@ -40,9 +40,9 @@
     "xo": "latest"
   },
   "dependencies": {
-    "async": "^2.5.0",
-    "mqtt": "^2.13.1",
+    "async": "^2.6.0",
+    "mqtt": "^2.15.3",
     "prompt-confirm": "^1.2.0",
-    "yargs": "^9.0.1"
+    "yargs": "^11.0.0"
   }
 }
